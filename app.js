@@ -29,7 +29,9 @@ btnAdd.addEventListener('click', () => {
     }
 
     const newItem = document.createElement('ion-item');
-    newItem.textContent = enterCourse + ' - ' + enterRating + '/5';
+    // newItem.textContent = enterCourse + ' - ' + enterRating + '/5';
+    // Add strong
+    newItem.innerHTML = `<strong>${enterCourse}</strong> - ${enterRating}/5`;
     listResult.appendChild(newItem);
     clear();
 });
